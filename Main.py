@@ -109,43 +109,43 @@ def Predict_Price():
 stock_window = Tk()
 stock_window.title("運用我來發大財吧")
 stock_window.minsize(width=400, height=400)
-stock_window.config(padx=20, pady=20, background="#00BFFF")
+stock_window.config(padx=20, pady=20, background="#708090")
 
 #label
-stock_price_title = Label(width=18, height=1,text="透過成交量預測收盤價",fg="#7FFFD4",font=("Arial", 17, "bold"), background="#00BFFF")
+stock_price_title = Label(width=18, height=1,text="透過成交量預測收盤價",fg="#FFFFFF",font=("Arial", 17, "bold"), background="#708090")
 stock_price_title.place(x = 58, y= 0)
 
-stock_price_number = Label(anchor="nw",width=12, height=1,text="Stock Number",fg="#0000CD",font=("Arial", 13, "normal"), background="#00BFFF")
+stock_price_number = Label(anchor="nw",width=12, height=1,text="Stock Number",fg="#00FFFF",font=("Arial", 13, "normal"), background="#708090")
 stock_price_number.place(x=60 ,y= 50)
 
-stock_price_amount = Label(anchor="nw",width=12, height=1,text="Stock Amount",fg="#0000CD",font=("Arial", 13, "normal"), background="#00BFFF")
+stock_price_amount = Label(anchor="nw",width=12, height=1,text="Stock Amount",fg="#00FFFF",font=("Arial", 13, "normal"), background="#708090")
 stock_price_amount.place(x=60 ,y= 90)
 
-stock_price = Label(anchor="nw",width=12, height=1,text="Predict Price :",fg="#0000CD",font=("Arial", 13, "normal"), background="#00BFFF")
+stock_price = Label(anchor="nw",width=12, height=1,text="Predict Price :",fg="#00FFFF",font=("Arial", 13, "normal"), background="#708090")
 stock_price.place(x=60 ,y= 170)
 
-stock_price_output = Label(anchor="nw",width=12, height=1,fg="#0000CD",font=("Arial", 13, "normal"), background="#00BFFF")
+stock_price_output = Label(anchor="nw",width=12, height=1,fg="#00FFFF",font=("Arial", 13, "normal"), background="#708090")
 stock_price_output.place(x=240 ,y= 170)
 
-capital_flows_title = Label(width=18, height=1,text="近一個月指數漲幅前三",fg="#7FFFD4",font=("Arial", 17, "bold"), background="#00BFFF")
+capital_flows_title = Label(width=18, height=1,text="近一個月指數漲幅前三",fg="#FFFFFF",font=("Arial", 17, "bold"), background="#708090")
 capital_flows_title.place(x = 58, y= 220)
 
-capital_flows_first_name = Label(width=14, height=1,fg="#0000CD",font=("Arial", 11, "normal"), background="#00BFFF")
+capital_flows_first_name = Label(width=14, height=1,fg="#00FFFF",font=("Arial", 11, "normal"), background="#708090")
 capital_flows_first_name.place(x = 0, y= 285)
 
-capital_flows_second_name = Label(width=14, height=1,fg="#0000CD",font=("Arial", 11, "normal"), background="#00BFFF")
+capital_flows_second_name = Label(width=14, height=1,fg="#00FFFF",font=("Arial", 11, "normal"), background="#708090")
 capital_flows_second_name.place(x = 125, y= 285)
 
-capital_flows_third_name = Label(width=14, height=1,fg="#0000CD",font=("Arial", 11, "normal"), background="#00BFFF")
+capital_flows_third_name = Label(width=14, height=1,fg="#00FFFF",font=("Arial", 11, "normal"), background="#708090")
 capital_flows_third_name.place(x = 250, y= 285)
 
-capital_flows_first_value = Label(width=14, height=1,fg="#0000CD",font=("Arial", 11, "normal"), background="#00BFFF")
+capital_flows_first_value = Label(width=14, height=1,fg="#00FFFF",font=("Arial", 11, "normal"), background="#708090")
 capital_flows_first_value.place(x = 0, y= 330)
 
-capital_flows_second_value = Label(width=14, height=1,fg="#0000CD",font=("Arial", 11, "normal"), background="#00BFFF")
+capital_flows_second_value = Label(width=14, height=1,fg="#00FFFF",font=("Arial", 11, "normal"), background="#708090")
 capital_flows_second_value.place(x = 125, y= 330)
 
-capital_flows_third_value = Label(width=14, height=1,fg="#0000CD",font=("Arial", 11, "normal"), background="#00BFFF")
+capital_flows_third_value = Label(width=14, height=1,fg="#00FFFF",font=("Arial", 11, "normal"), background="#708090")
 capital_flows_third_value.place(x = 250, y= 330)
 
 #entry
@@ -157,7 +157,7 @@ Stock_Amount_entry = Entry(width=9, background="#87CEEB")
 Stock_Amount_entry.place(x=240, y=90)
 
 #button
-Pridict_Button = Button(width=33, text="Pridict Price",font=("Arial", 9, "bold"),background="#FF7F50", activeforeground="#DC143C", command=Predict_Price)
+Pridict_Button = Button(width=33, text="Pridict Price",font=("Arial", 9, "bold"),background="#7FFFD4", activeforeground="#DC143C", command=Predict_Price)
 Pridict_Button.place(x=65, y=130)
 
 
